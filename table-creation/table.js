@@ -1,6 +1,5 @@
 import { rowCols } from "../grid-creation/grid.js";
-import { cellClickHandler } from "../handlers/handlers.js";
-
+import { cellClickHandler } from "../handlers/cellClickHandlers.js";
 
 // creation of table
 export function createTable() {

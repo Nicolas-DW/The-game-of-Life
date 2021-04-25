@@ -4,17 +4,18 @@ import {
   gridAndNextGrid,
   initializeGrids,
   resetGrids,
-} from "./grid-creation/grid.js";
+} from "./grid-creation/grid.js"
+
+import {
+  cellClickHandler
+} from "./handlers/handlers.js"
 
 let playing = false;
-
-
-console.log(rowCols);
 
 let timer;
 let reproductionTime = 100;
 
-// Lay out the board
+// creation of table
 function createTable() {
   let gridContainer = document.getElementById("gridContainer");
   if (!gridContainer) {
@@ -38,20 +39,7 @@ function createTable() {
   gridContainer.appendChild(table);
 }
 
-function cellClickHandler() {
-  let rowcol = this.id.split("_");
-  let rows = rowcol[0];
-  let col = rowcol[1];
 
-  let classes = this.getAttribute("class");
-  if (classes.indexOf("live") > -1) {
-    this.setAttribute("class", "dead");
-    gridAndNextGrid.grid[rows][col] = 0;
-  } else {
-    this.setAttribute("class", "live");
-    gridAndNextGrid.grid[rows][col] = 1;
-  }
-}
 
 function initialize() {
   createTable();

@@ -14,7 +14,7 @@ main{
 
 div{
   width: 500px;
-  height:500px;
+  /* height:500px; */
   margin: auto;
   background-color: red;
 }
@@ -37,8 +37,8 @@ table {
 
 td {
     border: 1px solid #F1F5DA;
-    width: 9px;
-    height: 9px;
+    width: 8px;
+    height: 8px;
     padding: 0;
 }
 

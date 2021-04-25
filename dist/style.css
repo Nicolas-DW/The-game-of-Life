@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+h1 {
+  margin: 10px auto;
+  color: #c5d6c6;
+  font-size: medium;
+  font-family: sans-serif;
+}
+
+div {
+  width: 500px;
+  margin: 10px auto;
+}
+
+table {
+  background-color: #c5d6c6;
+  border-spacing: 0;
+}
+
+td {
+  border: 1px solid #f1f5da;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+}
+
+td.dead {
+  background-color: transparent;
+}
+
+td.live {
+  background-color: #cc4774;
+  border-radius: 10px;
+}
